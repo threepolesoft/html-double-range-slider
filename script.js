@@ -3,6 +3,9 @@
     slideTwo();
 }
 
+let values1=document.getElementById("values-1");
+let values2=document.getElementById("values-2");
+
 let sliderOne = document.getElementById("slider-1");
 let sliderTwo = document.getElementById("slider-2");
 let displayValOne = document.getElementById("range1");
@@ -11,10 +14,24 @@ let minGap = 0;
 let sliderTrack = document.querySelector(".slider-track");
 let sliderMaxValue = document.getElementById("slider-1").max;
 
+function mm1(event){
+
+    values1.style.left=event.offsetX+30+"px";
+}
+
+function mm2(event){
+
+    values2.style.left=event.offsetX+30+"px";
+}
+
+
 function slideOne(){
+
+    
     if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
         sliderOne.value = parseInt(sliderTwo.value) - minGap;
     }
+
     displayValOne.textContent = sliderOne.value;
     fillColor();
 }
