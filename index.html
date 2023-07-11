@@ -18,25 +18,28 @@
 <body>
     <div class="wrapper">
 
-        <div style="display: flex;">
-            <div id="values-1">
-                <span id="range1">
-                    0
-                </span>
-                <span>
-            </div>
 
-            <div id="values-2">
-                <span id="range2">
-                    100
-                </span>
-            </div>
-        </div>
 
         <div class="container">
+            <div style="display: flex;">
+                <div id="values-1">
+                    <div id="range1">
+                        0
+                    </div>
+                    <span>
+                </div>
+
+                <div id="values-2">
+                    <div id="range2">
+                        100
+                    </div>
+                </div>
+            </div>
             <div class="slider-track"></div>
-            <input type="range" min="0" max="100" value="30" id="slider-1" oninput="slideOne()" onmousemove="mm1(event)">
-            <input type="range" min="0" max="100" value="70" id="slider-2" oninput="slideTwo()" onmousemove="mm2(event)">
+            <input type="range" min="0" max="500" value="50" id="slider-1" oninput="slideOne()"
+                onmousemove="mm1(event)">
+            <input type="range" min="0" max="500" value="300" id="slider-2" oninput="slideTwo()"
+                onmousemove="mm2(event)">
         </div>
     </div>
 
