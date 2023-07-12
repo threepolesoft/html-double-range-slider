@@ -18,15 +18,12 @@
 <body>
     <div class="wrapper">
 
-
-
-        <div class="container">
+        <div class="slider-range">
             <div style="display: flex;">
                 <div id="values-1">
                     <div id="range1">
                         0
                     </div>
-                    <span>
                 </div>
 
                 <div id="values-2">
@@ -36,11 +33,12 @@
                 </div>
             </div>
             <div class="slider-track"></div>
-            <input type="range" min="0" max="500" value="50" id="slider-1" oninput="slideOne()"
+            <input type="range" min="0" max="100" value="10" id="slider-1" oninput="slideOne()"
                 onmousemove="mm1(event)">
-            <input type="range" min="0" max="500" value="300" id="slider-2" oninput="slideTwo()"
+            <input type="range" min="0" max="100" value="50" id="slider-2" oninput="slideTwo()"
                 onmousemove="mm2(event)">
         </div>
+
     </div>
 
     <!--Script-->
